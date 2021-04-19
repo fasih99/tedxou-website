@@ -1,1 +1,4 @@
-<?php include_once("homepage/home.html"); ?>
+<?php 
+
+include_once("homepage/home.html"); 
+?>
