@@ -10,10 +10,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <style><?php include 'style.css';?>
+  <style><?php include 'style.css';
+           include 'sidebar.css';
+          ?>
   </style>
-  <style><?php include 'sidebar.css'; ?>
-    </style>
+  
 
   <link rel="stylesheet" href="sidebar.css">
 
@@ -60,7 +61,12 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-chevron-down"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/tedexlogo.jpeg" class="logo" style="height: 68px; width: 300px; margin-left: 15px;" > </a>
+            <a class="navbar-brand" href="index.html">
+              <?php 
+                echo "<img src="images/tedexlogo.jpeg" class="logo" style="height: 68px; width: 300px; margin-left: 15px;" >"; 
+              ?> 
+ 
+             </a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -287,7 +293,11 @@
                         </div>
                     </div>
                     <div  data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
-                        <img src="undraw_Payments_re_77x0.svg" class="h-100 w-100" alt="">
+                        
+                        <?php 
+                        echo "<img src="images/undraw_Payments_re_77x0.svg" class="h-100 w-100" alt="">"; 
+                        ?> 
+ 
                     </div>
                 </div>
             </div>
