@@ -1,208 +1,202 @@
 <!DOCTYPE html>
 <html>
- 
+
 <script>
-  function fun() {
-    var textWrapper = document.querySelector('.header');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.header .letter',
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70 * i
-      }).add({
-        targets: '.header',
-        opacity: 0,
-        duration: 10000000000000000000000000000000000000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
-  }
-
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    function fun() {
+        var textWrapper = document.querySelector('.header');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.header .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.header',
+                opacity: 0,
+                duration: 10000000000000000000000000000000000000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
-  }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
 </script>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style-gallery.css">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title> Gallery </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-gallery.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Gallery </title>
 </head>
 
 <body onload="fun()">
-  <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
-    <div class="container-fluid" >
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="glyphicon glyphicon-chevron-down"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="tedexlogo.jpeg" class="logo"
-            style="height: 68px; width: 300px; margin-left: 15px;"> </a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar" >
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="menu-toggle">2019</a>
-          </li>
-          <li class="active"><a href="index.html">Home</a></li>
+                <a class="navbar-brand" href="index.html"><img src="tedexlogo.jpeg" class="logo" style="height: 68px; width: 300px; margin-left: 15px;"> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="menu-toggle">2019</a>
+                    </li>
+                    <li class="active"><a href="index.html">Home</a></li>
 
 
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contactus.html">About Us</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
 
 
-        </ul>
-      </div>
-  </nav>
+                </ul>
+            </div>
+    </nav>
 
-  <div class="cont1">
-    <div class="header">
-      <p>GALLERY</p>
+    <div class="cont1">
+        <div class="header">
+            <p>GALLERY</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <div class="cont">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+
+            <div class="image">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+
+            <div class="image">
+                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+
+            <div class="image">
+                <img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="image">
+                <img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="image">
+                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <div class="cont">
-      <div class="image">
-        <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg"
-          onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-      </div>
 
-      <div class="image">
-        <img
-          src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg"
-          onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-      </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-      <div class="image">
-        <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477"
-          onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-      </div>
+            <div class="mySlides">
 
-      <div class="image">
-        <img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg"
-          onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-      </div>
+                <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
+            </div>
 
-      <div class="image">
-        <img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(5)"
-          class="hover-shadow cursor">
-      </div>
-      <div class="image">
-        <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg"
-          onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-      </div>
-      <div class="image">
-        <img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(7)"
-          class="hover-shadow cursor">
-      </div>
-      <div class="image">
-        <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477"
-          onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      </div>
+            <div class="mySlides">
 
+                <img src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+
+        </div>
     </div>
-  </div>
-
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-
-      <div class="mySlides">
-
-        <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img
-          src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg"
-          style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-
-        <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-
-
-    </div>
-  </div>
 
 </body>
 

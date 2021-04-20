@@ -142,17 +142,19 @@ body {
 }
 
 .accordion-item {
-    box-shadow: 0 2px 25px 0 #fc2b2b;
+    box-shadow: 0 0.3rem 0.3rem 2px #fc2b2b;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .accordion-button {
     width: 100%;
-    font-weight: bold;
+    font-weight: 300;
+    color: #ffffff;
     text-decoration: none;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #1a1a1a;
+    padding: 0.3rem;
 }
 
 .accordion-body {
@@ -173,25 +175,31 @@ body {
     content: '\002B';
 }
 
-.accordion-button::before {
-    content: '';
-    height: 25px;
+.accordion-button[aria-expanded="true"] {
+    color: #fc2b2b;
 }
 
 
 /**/
 
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: #fc2b2b;
+    border-top: 1px #fc2b2b;
+}
+
 
 /* contact us */
 
 .contact-heading {
-    color: #fc2b2b;
+    color: #ffffff;
     text-decoration: none;
     font-family: sans-serif;
 }
 
 p {
-    color: #fc2b2b;
+    color: #ffffff;
     font-size: 2rem;
     font-family: sans-serif;
 }
@@ -205,15 +213,15 @@ p {
 }
 
 .form {
-    background-color: white;
+    background-color: #1a1a1a;
     width: 100%;
     height: 100%;
     display: inline-block;
     padding: 3rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin: 1rem;
     text-align: left;
-    box-shadow: 0.3rem .3rem .3rem #fc2b2b;
+    box-shadow: 0 0.2rem 10px #ffffff;
 }
 
 .btn {
@@ -227,13 +235,13 @@ p {
     transition: .5s;
     font-size: 2.5rem;
     font-family: sans-serif;
+    border-radius: 2rem;
 }
 
 .form__fields .form-field {
     width: 100%;
     margin: 0.5rem 0;
-    border: none;
-    border-bottom: 0.15rem solid #1a1a1a;
+    border: 0.25rem solid #fc2b2b;
     font-size: 1remrem;
     outline: none;
     font-family: sans-serif;
@@ -253,4 +261,46 @@ p {
     font-weight: .85rem;
     color: #1a1a1a;
     font-family: sans-serif;
+}
+
+
+/* footer */
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+footer a {
+    padding-right: 20px;
+}
+
+.copy-right {
+    font-size: 1.3rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: red;
 }
