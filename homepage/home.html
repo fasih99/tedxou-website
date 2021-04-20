@@ -10,12 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <style><?php include 'style.css';
-           include 'sidebar.css';
-          ?>
-  </style>
-  
-
   <link rel="stylesheet" href="sidebar.css">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,17 +33,19 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
+              <li>
+                <a class="navbar-brand" style="pointer-events: none" href="">
+                <img src="images/logo4.png" class="logo" style="height: 68px; width: 200px; margin-left: -50px;" > 
+              </a>
+              </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#">Gallery</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#">Oraganizers</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
+                    <a href="#">Sponsors</a>
                 </li>
             </ul>
         </div>
@@ -61,23 +57,22 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-chevron-down"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-              <?php 
-                echo '<img src="tedexlogo.jpeg" class="logo" style="height: 68px; width: 300px; margin-left: 15px;" />' ; 
-              ?> 
- 
+            <a class="navbar-brand" href=""><img src="images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;" >
              </a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class='nav navbar-nav navbar-left' style="margin-left: 22em;">
+              <li><a href="#menu-toggle" id="menu-toggle">2019</a>
+            </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#menu-toggle" class="" id="menu-toggle">2019</a>
-              </li>
-            <li class="active"><a href="index.html">Home</a></li>
+
+            <li class="active"><a href="">Home</a></li>
 
             
             <li><a href="events.html">Events</a></li>
             <li><a href="contactus.html">About Us</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
+            </li>
 
 
           </ul>
@@ -154,11 +149,40 @@
            Nunc sodales ex non dui varius ultrices. Morbi commodo interdum accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eu ex consectetur, mattis nunc eget, iaculis justo. Cras cursus ultrices quam, eget dictum elit pulvinar a. Etiam sollicitudin dictum suscipit. Maecenas tristique turpis eget tortor pellentesque, sit amet varius tellus ultrices. Duis risus sem, fermentum aliquet eleifend vel, blandit sed magna<span id="dots3"></span>
            .</span><button onclick="myFunction3()" id="myBtn3">Read more</button></p>
 
-           <p class="p1" data-aos="zoom-in" data-aos-duration="1000">MEET THE SPEAKERS!</p>
+<!-- Buy tickets section 1-->
+        <p class="p1" data-aos="zoom-out" data-aos-duration="1000">BUY THE TICKETS!</p>
+
+           <section class="hero h-100">
+            <div  data-aos="flip-left" data-aos-duration="1000"class="h-100 py-5">
+                <div class="row h-100 justify-content-between align-items-center">
+                    <div class="col-lg-5 h-50">
+                        <div class="d-flex flex-column h-100 justify-content-between text-center text-lg-left">
+                          <p class="p1" data-aos="zoom-in" data-aos-duration="1000">What Are You Waiting For??</p>
+                          <h1 class="p1">
+                                Get the tickets asap !!
+                            </h1>
+                            <h5 class="text-muted font-weight-normal">
+                                Early bird gets 10% off !! 
+                            </h5>
+                            <div >
+                                <button style="border-radius:20px;" class="btn btn-success">
+                                  Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
+                        <img src="images/pay2.svg" class="h-100 w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
       <!-- Speakers -->
+      
 
            <section class="fdb-block">
             <div class="speaker">
+              <p class="p1" style="padding:20px;"data-aos="zoom-in" data-aos-duration="1000">MEET THE SPEAKERS!</p>
               <div  data-aos="flip-up" data-aos-duration="1000" style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;" class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                   <p class="lead">
@@ -166,6 +190,8 @@
                   </p>
           
                   <p class="lead"><strong> Name</strong> <em class="ml-4">Company</em></p>
+                  <hr>
+                  <p><a href="#">read more</a></p>
                 </div>
                 <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
                   <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
@@ -183,6 +209,8 @@
                   </p>
           
                   <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p>
+                  <hr>
+                  <p><a href="#">read more</a></p>
                 </div>
                 <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
                   <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
@@ -199,6 +227,9 @@
                   </p>
           
                   <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p>
+                  <hr>
+                  <p><a href="#">read more</a></p>
+
                 </div>
                 <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
                   <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
@@ -220,7 +251,7 @@
           
               <div class="row"></div>
           
-              <div class="row text-center justify-content-center">
+              <div class="row text-center justify-content-center mb-5">
                 <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
                   <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
           
@@ -243,9 +274,7 @@
                 </div>
 
                
-          
-              <div class="row justify-content-center text-center mt-5">
-                <div data-aos="flip-down" data-aos-duration="1000"  class="col-sm-4 m-sm-auto">
+                  <div data-aos="flip-down" data-aos-duration="1000"  class="col-sm-4 m-sm-auto">
                   <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
           
                   <h3><strong>Sara Doe</strong></h3>
@@ -265,14 +294,28 @@
                   <h3><strong>Sara Doe</strong></h3>
                   <p>"Wild Question Marks, but the Little Blind"</p>
                 </div>
-
               </div>
+
+              <div class="row text-center justify-content-center mb-5">
+                <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                  <img alt="image" style="height: 25em;" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+          
+                  <h3><strong>Sara Doe</strong></h3>
+                  <p>"Wild Question Marks, but the Little Blind"</p>
+                </div>
+                <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                  <img alt="image"  style="height: 25em;" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+          
+                  <h3><strong>Sara Doe</strong></h3>
+                  <p>"Wild Question Marks, but the Little Blind"</p>
+                </div>
+              </div>
+
             </div>
           </section>
    
         
-
-     
+<!-- Buy tickets section 2 -->
           <section class="hero h-100">
 
             <div  data-aos="flip-left" data-aos-duration="1000"class="h-100 py-5">
@@ -293,11 +336,7 @@
                         </div>
                     </div>
                     <div  data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
-                        
-                        <?php 
-                        echo '<img src="undraw_Payments_re_77x0.svg" class="h-100 w-100" alt=""/>'; 
-                        ?> 
- 
+                        <img src="images/pay1.svg" class="h-100 w-100" alt="">
                     </div>
                 </div>
             </div>
@@ -305,13 +344,40 @@
 
 
       <!--footer-->
-      <footer data-aos="flip-down" data-aos-duration="1000" class="text-center">
-         <em> Tedx Osmania </em>
-         <br>
-         <em>Osmania University, Hyderabad – 07 </em><br>         
-        <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-instagram fa-2x"> Tedx Osmania</a><br>
-        </p>
+
+      <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+        <div  class="container">
+          <div class="row align-items-top text-center text-md-left">
+            <div class="col-12 col-sm-6 col-md-6">
+              <h3><strong>Address</strong></h3>
+              <p>Osmania University<br>Hyderabad<br>India</p>
+              <p>Email:tedxou@gmail.com</p>
+              <p>+91 ##########</p> 
+              </div>
+    
+            <div class="col-12 col-sm-6 col-md-6">
+              <h3><strong>2019 Archive</strong></h3>
+              <a href="#"><p>Gallery</p></a>
+              <a href="#"><p>Sponsers</p></a>
+              <a href="#"><p>Organizers</p></a>
+            </div>
+          </div>
+      
+          <div class="row mt-5">
+            <div class="col text-center">
+              © 2021 TedxOsmaniaU. All Rights Reserved
+            </div>
+          </div>
+        </div>
+        <em> Tedx Osmania </em>
+        <br>
+        <em>Osmania University, Hyderabad – 07 </em><br>         
+       <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-instagram fa-2x"> Tedx Osmania</a><br>
+       </p>
       </footer>
+    
+     
+
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
       $(document).ready(function(){
@@ -335,7 +401,6 @@
     moreText3.style.display = "inline";
   }
 }
-
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
     $("#wrapper").toggleClass("toggled");
