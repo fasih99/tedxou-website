@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tedx Osmania</title>
+    <meta charset="utf-8">
+    <!-- bootstrap cdn-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #myBtn3 {
+            display: none;
+        }
+        
+        @media screen and (max-width: 425px) {
+            #more3 {
+                display: none;
+            }
+            #myBtn3 {
+                display: inline-block;
+                color: white;
+                background-color: unset;
+                border: solid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a class="navbar-brand" style="pointer-events: none" href="">
+                        <img src="images/logo4.png" class="logo" style="height: 68px; width: 200px; margin-left: -50px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Oraganizers</a>
+                </li>
+                <li>
+                    <a href="#">Sponsors</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+                    <a class="navbar-brand" href=""><img src="images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class='nav navbar-nav navbar-left' style="margin-left: 22em;">
+                        <li><a href="#menu-toggle" id="menu-toggle">2019</a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="">Home</a></li>
+
+
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contactus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        </li>
+
+
+                    </ul>
+                </div>
+        </nav>
+
+
+
+        <!--page part-->
+        <!--picture slide-->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <picture>
+                        <img src="https://blog.ted.com/wp-content/uploads/sites/2/2015/05/mia-birdsong-tedwomen-quote.jpg" alt="">
+                    </picture>
+                </div>
+
+                <div class="item ">
+
+                    <img src="https://blog.ted.com/wp-content/uploads/sites/2/2015/05/mia-birdsong-tedwomen-quote.jpg" alt="">
+
+                </div>
+
+                <div class="item ">
+
+                    <img src="https://images.adsttc.com/media/images/545b/6cc6/e58e/cebe/4200/0061/slideshow/141009_TED_James_Duncan_Davidson_01.jpg?1415277757" alt="">
+
+                </div>
+
+                <div class="item ">
+
+                    <img src="https://s12982.pcdn.co/wp-content/uploads/2019/10/TEDxJakarta.3072x1302.jpg" alt="">
+
+                </div>
+                <div class="item ">
+
+                    <img src="https://nowjakarta.co.id/uploads/ckeditor/pictures/4414/content_JIS-TEDx-Cross-Paths-and-Be-Awakened.jpg" alt="">
+
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Speakers -->
+
+
+
+        <!--page content-->
+        <div class="container-wrapper">
+            <div class="container">
+                <p class="p1" data-aos="zoom-in" data-aos-duration="1000">WELCOME TO TEDX OSMANIA!</p>
+                <p class="p2" data-aos="zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis odio, rutrum a vehicula in, maximus tincidunt dolor. Nunc sodales ex non dui varius ultrices. Morbi commodo interdum accumsan. Interdum et malesuada fames ac ante
+                    ipsum primis in faucibus. Curabitur eu ex consectetur, mattis nunc eget, iaculis justo. Cras cursus ultrices quam, eget dictum elit pulvinar a. Etiam sollicitudin dictum suscipit. Maecenas tristique turpis eget tortor pellentesque,
+                    sit amet varius tellus ultrices. Duis risus sem, fermentum aliquet eleifend vel, blandit sed magna<span id="dots3"></span> .
+                    </span><button onclick="myFunction3()" id="myBtn3">Read more</button></p>
+
+                <!-- Buy tickets section 1-->
+                <p class="p1" data-aos="zoom-out" data-aos-duration="1000">BUY THE TICKETS!</p>
+
+                <section class="hero h-100">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="h-100 py-5">
+                        <div class="row h-100 justify-content-between align-items-center">
+                            <div class="col-lg-5 h-50">
+                                <div class="d-flex flex-column h-100 justify-content-between text-center text-lg-left">
+                                    <p class="p1" data-aos="zoom-in" data-aos-duration="1000">What Are You Waiting For??</p>
+                                    <h1 class="p1">
+                                        Get the tickets asap !!
+                                    </h1>
+                                    <h5 class="text-muted font-weight-normal">
+                                        Early bird gets 10% off !!
+                                    </h5>
+                                    <div>
+                                        <button style="border-radius:20px;" class="btn btn-success">
+                                  Buy Tickets</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
+                                <img src="images/pay2.svg" class="h-100 w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Speakers -->
+
+
+                <section class="fdb-block">
+                    <div class="speaker">
+                        <p class="p1" style="padding:20px;" data-aos="zoom-in" data-aos-duration="1000">MEET THE SPEAKERS!</p>
+                        <div data-aos="flip-up" data-aos-duration="1000" style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;" class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                                </p>
+
+                                <p class="lead"><strong> Name</strong> <em class="ml-4">Company</em></p>
+                                <hr>
+                                <p><a href="#">read more</a></p>
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fdb-block">
+                    <div class="speakerr">
+                        <div data-aos="flip-right" data-aos-duration="1000" style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;" class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                                </p>
+
+                                <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p>
+                                <hr>
+                                <p><a href="#">read more</a></p>
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fdb-block">
+                    <div class="speaker">
+                        <div data-aos="flip-down" data-aos-duration="1000" style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;" class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                                </p>
+
+                                <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p>
+                                <hr>
+                                <p><a href="#">read more</a></p>
+
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Team-->
+
+
+                <section style="padding-bottom: 100px;" class="fdb-block team-5">
+                    <div class="team">
+                        <div class="row text-center justify-content-center">
+                            <div class="col-8">
+                                <p class="p1" data-aos="zoom-in" data-aos-duration="1000">MEET THE TEAM</p>
+                            </div>
+                        </div>
+
+                        <div class="row"></div>
+
+                        <div class="row text-center justify-content-center mb-5">
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-center justify-content-center mb-5">
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                                <img alt="image" style="height: 25em;" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                                <img alt="image" style="height: 25em;" class="img-circle img-responsive person" src="https://www.efilecabinet.com/wp-content/uploads/2019/05/g2-testimonial-male.jpg">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!-- Buy tickets section 2 -->
+                <section class="hero h-100">
+
+                    <div data-aos="flip-left" data-aos-duration="1000" class="h-100 py-5">
+                        <div class="row h-100 justify-content-between align-items-center">
+                            <div class="col-lg-5 h-50">
+                                <div class="d-flex flex-column h-100 justify-content-between text-center text-lg-left">
+                                    <p class="p1" data-aos="zoom-in" data-aos-duration="1000">What Are You Waiting For??</p>
+                                    <h1 class="p1">
+                                        Get the tickets asap !!
+                                    </h1>
+                                    <h5 class="text-muted font-weight-normal">
+                                        Early bird gets 10% off !!
+                                    </h5>
+                                    <div>
+                                        <button style="border-radius:20px;" class="btn btn-success">
+                                  Buy Tickets</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
+                                <img src="images/pay1.svg" class="h-100 w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--footer-->
+
+                <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+                    <div class="container">
+                        <div class="row align-items-top text-center text-md-left">
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <h3><strong>Address</strong></h3>
+                                <p>Osmania University<br>Hyderabad<br>India</p>
+                                <p>Email:tedxou@gmail.com</p>
+                                <p>+91 ##########</p>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <h3><strong>2019 Archive</strong></h3>
+                                <a href="#">
+                                    <p>Gallery</p>
+                                </a>
+                                <a href="#">
+                                    <p>Sponsers</p>
+                                </a>
+                                <a href="#">
+                                    <p>Organizers</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col text-center">
+                                © 2021 TedxOsmaniaU. All Rights Reserved
+                            </div>
+                        </div>
+                    </div>
+                    <em> Tedx Osmania </em>
+                    <br>
+                    <em>Osmania University, Hyderabad – 07 </em><br>
+                    <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-instagram fa-2x"> Tedx Osmania</a><br>
+                    </p>
+                </footer>
+
+
+
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        // Initialize Tooltip
+                        $('[data-toggle="tooltip"]').tooltip();
+                    })
+                    AOS.init()
+
+                    function myFunction3() {
+                        var dots3 = document.getElementById("dots3");
+                        var moreText3 = document.getElementById("more3");
+                        var btnText3 = document.getElementById("myBtn3");
+
+                        if (dots3.style.display === "none") {
+                            dots3.style.display = "inline";
+                            btnText3.innerHTML = "Read more";
+                            moreText3.style.display = "none";
+                        } else {
+                            dots3.style.display = "none";
+                            btnText3.innerHTML = "Read less";
+                            moreText3.style.display = "inline";
+                        }
+                    }
+                    $("#menu-toggle").click(function(e) {
+                        e.preventDefault();
+                        $("#wrapper").toggleClass("toggled");
+                    });
+                </script>
+            </div>
+</body>

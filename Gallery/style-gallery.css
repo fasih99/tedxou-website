@@ -1,35 +1,30 @@
-
-  * {
+* {
     box-sizing: border-box;
-  }
-  
-  
-  body {
+}
 
+body {
     background: black !important;
     width: 100%;
     overflow-x: hidden;
-  }
+}
 
-  .header {
+.header {
     background: black;
     color: black;
     text-align: center;
     font-weight: 900;
     font-size: 4em;
-  }
+}
 
-  .header .letter {
+.header .letter {
     margin-top: 30px;
     font-family: Helvetica;
     color: red;
     display: inline-block;
     line-height: 1em;
-  }
+}
 
-
-
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -40,46 +35,52 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
-  /* Modal Content */
-  .modal-content {
+
+/* Modal Content */
+
+.modal-content {
     position: relative;
     background-color: black !important;
     margin: auto;
     padding: 0;
     width: 30%;
     top: 50px;
-  }
+}
 
-  /* The Close Button */
-  .close {
+
+/* The Close Button */
+
+.close {
     color: white !important;
     position: absolute;
     top: 100px;
     right: 25px;
     font-size: 60px !important;
     font-weight: bold;
-  }
+}
 
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  .mySlides {
+.mySlides {
     display: none;
-  }
+}
 
-  .cursor {
+.cursor {
     cursor: pointer;
-  }
+}
 
-  /* Next & previous buttons */
-  .prev,
-  .next {
+
+/* Next & previous buttons */
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -93,221 +94,213 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+}
 
-  /* Position the "next button" to the right */
-  .next {
+
+/* Position the "next button" to the right */
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
-
-
-  .caption-container {
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
+}
 
-  .demo {
+.demo {
     opacity: 0.6;
-  }
+}
 
-  .active,
-  .demo:hover {
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}
 
-  img.hover-shadow {
+img.hover-shadow {
     transition: 0.3s;
-  }
+}
 
-  .hover-shadow:hover {
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
-  .cont {
+.cont {
     position: relative;
     column-count: 4;
     margin: 20px;
     background: black;
-  }
+}
 
-  .cont1 {
+.cont1 {
     position: absolute;
     top: 100px;
+}
 
-  }
-
-  .image {
+.image {
     display: inline-block;
     margin: 20px;
+}
 
-  }
-
-  .image img {
+.image img {
     transition: 1s;
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     box-shadow: 0 0 20px red;
-  }
+}
 
-  .image img:hover {
+.image img:hover {
     transform: scale(1.05);
-  }
+}
 
-  .modal img {
+.modal img {
     transition: 1s;
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     box-shadow: 0 0 20px red;
-  }
+}
 
-  .modal img:hover {
+.modal img:hover {
     transform: scale(1.05);
-  }
+}
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .cont {
-      column-count: 3
+        column-count: 3
     }
-  }
+}
 
-  @media screen and (max-width: 740px) {
+@media screen and (max-width: 740px) {
     .cont {
-      column-count: 2
+        column-count: 2
     }
-
     .modal-content {
-      position: relative;
-      background-color: black;
-      margin: auto;
-      padding: 0;
-      width: 400px;
-
+        position: relative;
+        background-color: black;
+        margin: auto;
+        padding: 0;
+        width: 400px;
     }
-  }
+}
 
-  @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
     .cont {
-      column-count: 1
+        column-count: 1
     }
-  }
-  
+}
 
-  
-  
-  
-  
-  .carousel-inner img {
+.carousel-inner img {
     width: 100%;
     max-height: 550px !important;
-  }
-  
-  
-  
-  /* navbar css */
-  .navbar {
+}
+
+
+/* navbar css */
+
+.navbar {
     letter-spacing: 4px;
     background-color: white;
     color: orange;
     min-height: 80px;
-  }
-  
-  .navbar-header button {
+}
+
+.navbar-header button {
     margin: 0;
     padding: 24px;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     margin: 0;
     padding: 0;
-  }
-  
-  @media screen and (max-width: 425px) {
+}
+
+@media screen and (max-width: 425px) {
     .navbar-collapse {
-      margin-top: 25px;
+        margin-top: 25px;
     }
-  }
-  .navbar li a,
-  .navbar .navbar-brand {
+}
+
+.navbar li a,
+.navbar .navbar-brand {
     color: black;
     font-size: 16px;
     line-height: 3;
-  }
-  
-  .navbar-nav li a:hover {
+}
+
+.navbar-nav li a:hover {
     color: #000000 !important;
-  }
-  
-  /* The active link */
-  .navbar-nav li.active a {
+}
+
+
+/* The active link */
+
+.navbar-nav li.active a {
     color: #000000 !important;
-   
-  }
-  
-  .open .dropdown-toggle {
+}
+
+.open .dropdown-toggle {
     color: #fff;
     background-color: #555 !important;
-  }
-  .dropdown-menu li a {
+}
+
+.dropdown-menu li a {
     color: #000 !important;
-  }
-  
-  /* On hover, the dropdown links will turn red */
-  .dropdown-menu li a:hover {
+}
+
+
+/* On hover, the dropdown links will turn red */
+
+.dropdown-menu li a:hover {
     background-color: rgb(83, 81, 81) !important;
     color: white !important;
-  }
-  
-  .readmore {
+}
+
+.readmore {
     color: rgb(93, 93, 241);
-  }
-  
-  .navbar-toggle .icon-bar {
+}
+
+.navbar-toggle .icon-bar {
     color: blue;
     border-color: transparent;
-  }
-  
-  .nav li a {
-    margin: 0px 10px;
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1024px) {
-    .nav li a {
-      margin: 0px;
-    }
-    .navbar-nav > li > a {
-      padding: 15px 10px;
-    }
-  }
-  .navbar-fixed-top .navbar-collapse {
-    max-height: 400px;
-  }
+}
 
-  /**/
-    
-  .logo {
+.nav li a {
+    margin: 0px 10px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    .nav li a {
+        margin: 0px;
+    }
+    .navbar-nav>li>a {
+        padding: 15px 10px;
+    }
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 400px;
+}
+
+
+/**/
+
+.logo {
     position: absolute;
     width: 40px;
     height: 37px;
     top: 10px;
     overflow: hidden;
-  }
-  
-  
-  
-  
-
-  
-  
-  
-  
+}
