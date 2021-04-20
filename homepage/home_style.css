@@ -31,7 +31,11 @@
   /* navbar css */
   .navbar {
     letter-spacing: 4px;
+
+    background-color: #ffffff;
+
     background-color: white;
+
     color: orange;
     min-height: 80px;
   }
@@ -190,6 +194,8 @@
   }
   
   .container-wrapper {
+    background-color: #1a1a1a;
+
     background: url(./images/mic1-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,6 +208,8 @@
     text-align: center;
     padding-top: 0;
     color: #fff;
+    background-color: #1a1a1a;
+
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
   }
@@ -383,31 +391,8 @@
     }
   }
   
-  .internship {
-    position: fixed;
-    bottom: 5%;
-    right: 1%;
-    transition: all 0.3s;
-    z-index: 100;
-  }
-  .internship button {
-    padding: 1rem 2rem;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 0.5rem 1.5rem #000;
-  }
-  .internship:hover {
-    transform: scale(1.1);
-  }
   
-  .internship a {
-    text-decoration: none;
-    color: #000;
-    font-size: 2rem;
-  }
+
   
   @media screen and (max-width:425px){
       .internship button{
@@ -418,3 +403,4 @@
       }
   }
   
+
