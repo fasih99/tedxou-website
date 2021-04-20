@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+
+
+body
+		{
+			
+			background: black;
+			
+		}
+.header
+		{
+		  	color: black;
+		  	text-align: center;
+		  	font-weight: 900;
+		  	font-size: 4em;
+		}
+		.header .letter 
+		{
+			margin-top: 30px;
+		  	font-family: sans-serif;
+		  	color: red;
+		  	display: inline-block;
+		  	line-height: 1em;
+		}
+
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #e60000;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:rgb(255, 0, 0) ;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+ 
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cont{
+position:relative;
+column-count:4;
+margin: 20px;
+}
+
+.image{
+display: inline-block;
+margin:20px;
+
+}
+
+img{
+transition:1s;
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+box-shadow:  0 0 20px red;
+}
+img:hover{
+transform: scale(1.05);}
+
+@media screen and (max-width: 1200px) {
+  .cont {
+    column-count:3
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .cont {
+    column-count:2
+  }
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 400px;
+ 
+}
+}
+@media screen and (max-width: 375px) {
+  .cont {
+    column-count:1
+  }
+}
+
+
+</style>
+<script>
+		function fun()
+		{
+			var textWrapper = document.querySelector('.header');
+			textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+			anime.timeline({loop: true})
+	  		.add({
+	    		targets: '.header .letter',
+	    		scale: [4,1],
+	    		opacity: [0,1],
+	    		translateZ: 0,
+	    		easing: "easeOutExpo",
+	    		duration: 950,
+	    		delay: (el, i) => 70*i
+	  		}).add({
+	    		targets: '.header',
+	    		opacity: 0,
+	    		duration: 10000000000000000000000000000000000000,
+	    		easing: "easeOutExpo",
+	    		delay: 1000
+	  		});
+	  	}
+	  	
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> Gallery </title>
+</head>
+
+
+
+<body onload="fun()">
+	<div class="header">
+		<p>GALLERY</p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Tedx</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+  
+<div class="cont"> 
+  
+
+<div class="image">
+   <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+   </div>
+
+<div class="image">
+    <img src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+   </div>
+
+<div class="image">
+    <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" >
+   </div>
+
+<div class="image">
+<img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+   </div>
+
+<div class="image">
+<img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+   </div>
+<div class="image">
+    <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+   </div>
+<div class="image">
+   <img src="https://wallpapercave.com/wp/wp4937431.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+   </div>
+<div class="image">
+<img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+   </div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      
+      <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="https://images.fineartamerica.com/images-medium-large-5/sunflower-abstract-by-nature-square-lee-craig.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      
+      <img src="https://i.pinimg.com/originals/7f/c7/3c/7fc73c4d6fb56a40a735553aa8520197.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      
+      <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      
+      <img src="https://i.pinimg.com/originals/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      
+      <img src="https://wallpapercave.com/wp/wp4937431.jpg" style="width:100%">
+    </div>
+
+<div class="mySlides">
+      
+      <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+  </div>
+</div>
+</body>
+</html>
