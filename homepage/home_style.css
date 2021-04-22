@@ -456,3 +456,16 @@ a:hover{
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+    width: 1.2rem;
+  
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #FC2B2B;
+      border-radius: 20px;
+  }
