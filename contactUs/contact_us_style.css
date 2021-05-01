@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -266,12 +268,23 @@ p {
 
 /* footer */
 
-footer a {
-    text-decoration: none;
-    color: aliceblue;
+section {
+    font: 1.2rem;
+    padding: 20px 20px;
+}
+
+.flex-container,
+.box {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
 }
 
 footer {
+    margin-top: 5px;
+    background: rgb(24, 24, 24);
+    color: aliceblue;
     display: flex;
     width: 100%;
     padding: 10px 5px;
@@ -281,17 +294,73 @@ footer {
 }
 
 footer a {
-    font-size: 1.2rem;
+    font-size: 0.85em;
     padding-right: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.flex-container {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+}
+
+.bold {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.title {
+    font-weight: 900;
+    color: red;
+}
+
+ul li {
+    font-size: 0.85em;
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.three ul li a {
+    color: aliceblue;
+}
+
+.one,
+.three {
+    padding: 10px 20px;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #fc2b2b;
+}
+
+@media(max-width:720px) {
+    .flex-container,
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bold {
+        text-align: center;
+    }
 }
 
 .copy-right {
     font-size: 1.2rem;
 }
 
-footer a:hover {
-    text-decoration: underline;
-    color: aliceblue;
+h4 {
+    font-size: 2.5rem;
 }
 
 ::-webkit-scrollbar {
