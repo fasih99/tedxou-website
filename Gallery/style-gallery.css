@@ -192,50 +192,15 @@
       }
   }
   
-   ::-webkit-scrollbar {
-      width: 3px;
-  }
-  
-   ::-webkit-scrollbar-thumb {
-      background: red;
-  }
-  
-   ::-webkit-scrollbar-thumb:hover {
-      background: red;
-  }
+
   
   .carousel-inner img {
       width: 100%;
       max-height: 550px !important;
   }
   
-  footer {
-      display: flex;
-      width: 100%;
-      padding: 10px 5px;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      font-size: 0.7em;
-      margin-top: 5px;
-      background: rgb(24, 24, 24);
-      color: aliceblue;
-  }
   
-  footer a {
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: aliceblue;
-      padding-right: 20px;
-  }
-  
-  .copy-right {
-      font-size: 1.2rem;
-  }
-  
-  footer a:hover {
-      text-decoration: underline;
-      color: aliceblue;
-  }
+
   /* navbar css */
   
   .navbar {
@@ -313,15 +278,82 @@
           padding: 15px 10px;
       }
   }
+
+
+
+  /* footer start */
+
+.footer-container
+{
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    padding-top: 0;
+    color: #fff;
+    background-color: black;
+    width: 100%;
+    padding: 45px;
+    font-size: medium;
+}
+
+
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.footer2 {
+    margin-top: 5px;
+    padding: 10px 50px;
+    background: rgb(24, 24, 24);
+    color: aliceblue;
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.social {
+    display:inline-block;
+    margin-left: 44%;
+    margin-right: auto;
   
-  .navbar-fixed-top .navbar-collapse {
-      max-height: 400px;
+    text-align: center;
+    size: 2em;
+}
+
+a
+{
+color: #ffffff;
+}
+
+a:hover{
+  color:#FC2B2B;
+  text-decoration: none;
+}
+
+/* footer end */
+
+body::-webkit-scrollbar {
+    width: 1.2rem;
+  
   }
   
-  .logo {
-      position: absolute;
-      width: 40px;
-      height: 37px;
-      top: 10px;
-      overflow: hidden;
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #FC2B2B;
+      border-radius: 20px;
   }
