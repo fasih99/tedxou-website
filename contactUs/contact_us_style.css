@@ -376,6 +376,13 @@ a
 color: #ffffff;
 }
 
+a>p:hover
+{
+    color: #FC2B2B;
+    text-decoration: none;
+}
+
+
 a:hover{
   color:#FC2B2B;
   text-decoration: none;
